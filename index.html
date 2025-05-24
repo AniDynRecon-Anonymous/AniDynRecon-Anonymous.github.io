@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
+  <title>AniDynRecon: Animatable 4D Dynamics Reconstruction from Sparse Point Clouds</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -43,6 +43,12 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+
+  <style>
+    .red-text {
+      color: red;
+    }
+  </style>
 </head>
 <body>
 
@@ -65,7 +71,7 @@
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
+                    <span class="author-block">Institution Name<br>Under review</span>
                     <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
                   </div>
 
@@ -133,7 +139,7 @@
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+          AniDynRecon turns a 3D point cloud sequence into temporally consistent surfaces.
       </h2>
     </div>
   </div>
@@ -148,7 +154,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Reconstructing dynamic objects from sparse point cloud sequences without correspondence is a challenging task. Existing methods usually rely on object templates as strong geometric priors to ensure the accuracy and temporal consistency of geometric reconstruction. In this paper, we explore this highly ill-posed problem of simultaneously reconstructing object skeletons, skinning weights, motion fields, and surfaces from sparse point cloud sequences in an unsupervised manner. Specifically, we propose a *Hierarchical Skeletal Modeling (HSM)* module, which adopts a compact, interpretable skeletal abstraction inspired by the Medial Axis Transform. The skeleton representation facilitates jointly learn plausible joints, skinning weights in an unsupervised manner for capturing dynamics while reconstructing shapes. In addition, we introduce a *Combinatorial Motion Sampling (CMS)* strategy to adaptively generate new motion sequence for data augmentation utilizing the learned hierarchical skeletons. This scheme enhances the motion diversity of objects and improves the generalization of the model, especially for unseen out-of-domain scenarios. Extensive experiments on multiple benchmarks demonstrate that AniDynRecon outperforms existing methods in terms of accuracy, robustness, and structural interpretability, while enabling flexible downstream applications such as motion synthesis and editing. Our project page is https://anidynrecon-anonymous.github.io/.
+            Reconstructing dynamic objects from sparse point cloud sequences without correspondence is a challenging task. Existing methods usually rely on object templates as strong geometric priors to ensure the accuracy and temporal consistency of geometric reconstruction. In this paper, we explore this highly ill-posed problem of simultaneously reconstructing object skeletons, skinning weights, motion fields, and surfaces from sparse point cloud sequences in an unsupervised manner. Specifically, we propose a <span class="red-text">Hierarchical Skeletal Modeling (HSM)</span> module, which adopts a compact, interpretable skeletal abstraction inspired by the Medial Axis Transform. The skeleton representation facilitates jointly learn plausible joints, skinning weights in an unsupervised manner for capturing dynamics while reconstructing shapes. In addition, we introduce a <span class="red-text">Combinatorial Motion Sampling (CMS)</span> strategy to adaptively generate new motion sequence for data augmentation utilizing the learned hierarchical skeletons. This scheme enhances the motion diversity of objects and improves the generalization of the model, especially for unseen out-of-domain scenarios. Extensive experiments on multiple benchmarks demonstrate that AniDynRecon outperforms existing methods in terms of accuracy, robustness, and structural interpretability, while enabling flexible downstream applications such as motion synthesis and editing. Our project page is https://anidynrecon-anonymous.github.io/.
           </p>
         </div>
       </div>
@@ -165,9 +171,9 @@
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/Editing.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          First image description.
+          Motion editing.
         </h2>
       </div>
       <div class="item">
@@ -260,7 +266,7 @@
 
 
 <!-- Paper poster -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title">Poster</h2>
@@ -270,7 +276,7 @@
         
       </div>
     </div>
-  </section>
+  </section> -->
 <!--End paper poster -->
 
 
